@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+ 	<head>
+    	<meta charset="utf-8">
+    	<title>HTML Academy: Девайс</title>
+  	</head>
+  	<body>
+    	<header class="main-header"> 
+    		<div class="container-menu">
+    			<a class="main-logo"><img src="img/main-logo.svg" alt="Device" width="160" height="35"></a>
+    			<div class="header-top">
+        			<form class="search-form" action="#" method="get">
+         				<input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+         				<button class="search-submit" type="submit">Поиск</button>
+        			</form>
+        			<ul class="user-navigation">
+        				<li class="user-item"><a class="user-login" href="login.html">Войти</a>
+          				<li class="user-item"><a class="user-logout" href="logout.html">Выйти</a>
+          				<li class="user-item"><a class="user-compare" href="compare.html">Сравнить</a>
+          				<li class="user-item"><a class="user-cart" href="cart.html">Корзина</a>
+        			</ul>
+        		</div>
+          		<nav class="main-navigation">
+        			<div class="main-navigation-catalog">
+          				<a class="menu-link" href="#">Каталог товаров</a>
+          				<button class="menu-button" name="button">+</button> <!--Всплывает окно с меню-->
+        			</div> 
+        			<ul class="pop-up-menu">
+          				<li class="pop-up-item"><a class="pop-up-virtualreality" href="virtualreality.html">Виртуальная реальность</a></li>
+          				<li class="pop-up-item"><a class="pop-up-bracelets" href="bracelets.html">Фитнес-браслеты</a></li>
+         				<li class="pop-up-item"><a class="pop-up-quadrocopters" href="quadrocopters.html">Квадракоптеры</a></li>
+          				<li class="pop-up-item"><a class="pop-up-monopods" href="monopods.html">Моноподы для селфи</a></li>
+          				<li class="pop-up-item"><a class="pop-up-watches" href="watches.html">Умные часы</a></li>
+          				<li class="pop-up-item"><a class="pop-up-cameras" href="cameras.html">Экшн-камеры</a></li>
+        			</ul>
+        			<ul class="site-navigation">
+          				<li class="site-item"><a class="site-delivery" href="delivery.html">Доставка</a></li>
+          				<li class="site-item"><a class="site-guarantee" href="guarantee.html">Гарантия</a></li>
+          				<li class="site-item"><a class="site-contacts" href="contacts.html">Контакты</a></li>
+        			</ul>
+      			</nav>
+     		 </div>
+    	</header>
 
   </body>
 </html>
