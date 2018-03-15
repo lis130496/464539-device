@@ -50,9 +50,58 @@
                 <li class="chain-current">Моноподы для селфи</li>
             </ul>
 
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Стоимость</legend>
+                        <input type="range" name="cost" min="0" max="10000" step="100">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul>
+                            <li class="option">
+                                <input class="visually-hidden" type="checkbox" name="black" id="filter-black" checked>
+                                <label for="filter-black">Черный</label>
+                            </li>
+                            <li class="option">
+                                <input class="visually-hidden" type="checkbox" name="white" id="filter-white">
+                                <label for="filter-white">Белый</label>
+                            </li>
+                            <li class="option">
+                                <input class="visually-hidden" type="checkbox" name="darkblue" id="filter-darkblue" checked>
+                                <label for="filter-darkblue">Синий</label>
+                            </li>
+                            <li class="option">
+                                <input class="visually-hidden" type="checkbox" name="red" id="filter-red" checked>
+                                <label for="filter-red">Красный</label>
+                            </li>
+                            <li class="option">
+                                <input class="visually-hidden" type="checkbox" name="pink" id="filter-pink">
+                                <label for="filter-pink">Розовый</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                        <ul>
+                            <li class="option">
+                                <input class="visually-hidden" type="radio" name="bluetooth" value="on" id="filter-on" checked>
+                                <label for="filter-on">Есть</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden" type="radio" name="bluetooth" value="off" id="filter-off">
+                                <label for="filter-off">Нет</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button">Показать</button>
+                </form>
+            </section>
+            
         </main>
 
-        
+
         <footer>
             <div class="footer-navigation">
                 <a href="index.html"><img src="img/main-logo.svg" alt="Device" width="160" height="35"></a>
